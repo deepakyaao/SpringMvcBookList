@@ -23,8 +23,9 @@ public class CartServiceImpl implements CartService {
 
         cart.setUserId(userId);
         cart.setBookId(bookId);
-
-        cartRepo.save(cart);
+      
+        Cart save = cartRepo.save(cart);
+        
     }
     
     @Override
